@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function($){
+            $("#button1").on("click",function(){
+                const concept=$(".concept_container").offset().top;
+                $("html").animate({scrollTop:concept});
+            });
+        })
+
+        $(function($){
+            $("#button2").on("click",function(){
+                const menu=$(".menu_container").offset().top;
+                $("html").animate({scrollTop:menu});
+            });
+        })
+
+        $(function($){
+            $("#button3").on("click",function(){
+                const news=$(".news_containter").offset().top;
+                $("html").animate({scrollTop:news});
+            });
+        })
+
+        $(function($){
+            $("#button4").on("click",function(){
+                const home=$(".header_container").offset().top;
+                $("html").animate({scrollTop:home});
+            });
+        })
+
+        $(function($){
+            $("#button5").on("click",function(){
+                const under_concept=$(".concept_container").offset().top;
+                $("html").animate({scrollTop:under_concept});
+            });
+        })
+
+        $(function($){
+            $("#button6").on("click",function(){
+                const under_menu=$(".menu_container").offset().top;
+                $("html").animate({scrollTop:under_menu});
+            });
+        })
+
+        $(function($){
+            $("#button7").on("click",function(){
+                const under_news=$(".news_containter").offset().top;
+                $("html").animate({scrollTop:under_news});
+            });
+        })
+    </script>
+    <link rel="stylesheet" href="cafe.css" >
+    <title>cafe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="contents">
+            <header>
+                <div class="header_container">
+                    <ul>
+                        <li><img src="cafe-img/cafe_assets/header_concept.png" class="botton" id="button1"></li>
+                        <li><img src="cafe-img/cafe_assets/header_menu.png" class="botton" id="button2"></li>
+                        <li><img src="cafe-img/cafe_assets/header_news.png" class="botton" id="button3"></li>
+                        <!-- <li><img src="cafe_assets/header_home.png"></li> -->
+                    </ul>
+                    <section class="cafe-img/header_imgs">
+                        <img src="cafe-img/cafe_assets/torio.png" class="torio">
+                        <img src="cafe-img/cafe_assets/header_title.png" class="header_title">
+                        <img src="cafe-img/cafe_assets/hima1.png" class="hima1">
+                    </section>
+                </div>
+            </header>
+            <div>
+                <article class="concept_container">
+                    <img src="cafe-img/cafe_assets/about_concept.png" class="titles">
+                    <div class="sub-concept">
+                        <img src="cafe-img/cafe_assets/house.png" class="house">
+                        <div class="sub-text">
+                            <h1>ことりとふれあえるインコカフェ</h1>
+                            <p>かわいいことりをながめながら<br>おいしいドリンクやスイーツを<br>楽しむことができます</p>
+                        </div>
+                    </div>
+                </article>
+                <aside class="menu_container">
+                    <img src="cafe-img/cafe_assets/menu_title.png" class="titles">
+                    <section class="menus">
+                        <div class="box"><a href="#"><img src="cafe-img/cafe_assets/coffee.png"><img src="cafe-img/cafe_assets/btn.png" class="more_btn"></a></div>
+                        <div class="box"><a href="#"><img src="cafe-img/cafe_assets/tea.png"><img src="cafe-img/cafe_assets/btn.png" class="more_btn"></a></div>
+                        <div class="box"><a href="#"><img src="cafe-img/cafe_assets/sweet.png"><img src="cafe-img/cafe_assets/btn.png" class="more_btn"></a></div>
+                    </section>
+                </aside>
+                <article class="news_containter">
+                    <img src="cafe-img/cafe_assets/news_title.png" class="titles">
+                    <div class="prs">
+                        <figure><a href="#"><img src="cafe-img/cafe_assets/festival.png"><hr class="line"></a></figure>
+                        <figure><a href="#"><img src="cafe-img/cafe_assets/mday.png"><hr class="line"></a></figure>
+                        <figure><a href="#"><img src="cafe-img/cafe_assets/market.png"><hr class="line"></a></figure>
+                        <figure><a href="#"><img src="cafe-img/cafe_assets/owl.png"><hr class="line"></a></figure>
+                        <figure><a href="#"><img src="cafe-img/cafe_assets/accessories.png"><hr class="line"></a></figure>
+                        <figure><a href="#"><img src="cafe-img/cafe_assets/second.png"><hr class="line"></a></figure>
+                    </div>
+                    <a href="#"><img src="cafe-img/cafe_assets/btn4.png" class="titles more_btn"></a>
+                    <div class="banners">
+                        <a href="#"><img src="cafe-img/cafe_assets/banner_1.png" class="banner banner1"></a>
+                        <a href="#"><img src="cafe-img/cafe_assets/banner_2.png" class="banner"></a>
+                    </div>
+                </article>
+            </div>
+            <footer>
+                <aside class="footer_container">
+                    <ul>
+                        <li><img src="cafe-img/cafe_assets/footer_home.png" class="botton" id="button4"></li>
+                        <li><img src="cafe-img/cafe_assets/footer_concept.png" class="botton" id="button5"></li>
+                        <li><img src="cafe-img/cafe_assets/footer_menu.png" class="botton" id="button6"></li>
+                        <li><img src="cafe-img/cafe_assets/footer_news.png" class="botton" id="button7"></li>
+                    </ul>
+                    <p>Copyright &copy; yui 2021</p>
+                </aside>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

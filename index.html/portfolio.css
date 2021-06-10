@@ -1,0 +1,326 @@
+/*全体*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+body {
+    margin: 0;
+    font-family: '游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+    color: #583822;
+    line-height: 1.9;
+    letter-spacing: .08rem;
+}
+
+.wrapper {
+  padding: 0 1.5rem;
+  margin:0 auto;
+}
+
+
+
+/*ヘッター*/
+header {
+    background-image: url(portfolioImg/back.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.hamburger-menu div {
+    height: 5px;
+    background-color: #583822;
+    margin: 10px auto;
+  }
+  .hamburger-menu .first-border {
+    width: 25px;
+    /* メニューアイコンの線の長さを調整 */
+  }
+  .hamburger-menu .second-border {
+    width: 18px;
+    /* メニューアイコンの線の長さを調整 */
+  }
+  .hamburger-menu .third-border {
+    width: 12px;
+    /* メニューアイコンの線の長さを調整 */
+  }
+
+  .hamburger .borders {
+    padding-top:5px;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    width:60px;
+    height:60px;
+    transition: .5s;
+    opacity:1;
+  }
+  .hamburger:hover {
+    opacity:0.5;
+    /* 透明度を指定 */
+  }
+  .hamburger + .sidenavs:target {
+    overflow-x: visible;
+    /* ボックスからはみ出る箇所をそのまま表示 */
+    width: 40%;
+    /* サイドメニューの幅 */
+    display:block;
+  }
+  .sidenavs:target {
+    overflow-x: hidden;
+    /* ボックスからはみ出る箇所を隠す */
+    width: 0;
+    transition-duration:1.2s;
+    /* アニメーションの時間を0.5秒に指定 */
+  }
+  /* ハンバーガーメニュー表示時 */
+  .sidenavs {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* 画像の配置を指定 */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#f4e9e2;
+    /* サイドバーの背景画像を指定 */
+    overflow-x: hidden;
+    /* 横スクロールを無効にする */
+    padding-top: 60px;
+    transition: .8s;
+    /* アニメーションの時間を0.5秒に指定 */
+    transform:translate(0px);
+    /* X軸(横)の移動距離を指定 */
+    border-right: 1px solid rgba(255, 255, 255, 1);
+  }
+  /* ハンバーガーメニュー表示時のリンク */
+  .sidenavs a {
+    text-decoration: none;
+    color: #583822;
+    display: block;
+    transition: 0.5s;
+    /* アニメーションの時間を0.5秒に指定 */
+    font-weight:bold;
+  }
+  /* マウスオーバー後のリンク */
+  .sidebar-btn p:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+  .sidenavs p {
+    margin:20px 10px;
+    /* サイドバーのボタン位置を調整 */
+    width:250px;
+  }
+  /* クローズボタン */
+  .sidenavs .close-btn {
+    position: absolute;
+    /* 親要素との絶対位置を指定 */
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .borders {
+    display: block;
+  }
+
+/*自己紹介*/
+#about {
+    background-color: #f4e9e2;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+#about figure {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+#about ul {
+  list-style: none;
+}
+
+#about li {
+  padding-bottom: 1rem;
+  font-size: 14px;
+  letter-spacing: .1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  padding-top: 80px;
+  margin: 0;
+}
+
+.text {
+    margin-bottom: 10px;
+}
+
+.inko {
+    width: 80%;
+}
+
+/*制作物*/
+#product {
+  margin-bottom: 80px;
+}
+
+.products {
+    margin: 0 auto;
+}
+
+.product {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.product-item {
+  border: solid 1px rgba(102, 102, 102, .3);
+}
+
+.product-caption {
+  text-align: center;
+}
+
+.product-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-info {
+  font-size: 11px;
+}
+
+
+/*お問い合わせ*/
+#contact {
+    background-color: #f4e9e2;
+    margin: 0;
+}
+
+/* pc版 */
+@media(min-width:600px) {
+  .container {
+
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  /* ヘッター */
+  .sidenavs p {
+    font-size: 15px;
+    width: auto;
+  }
+
+  .sidenavs {
+    overflow-x: visible;
+    width: auto;
+    height: auto;
+    background: none;
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+  }
+
+  .close-btn {
+    display: none!important;
+  }
+
+  .borders {
+    display: none;
+  }
+
+  .sidenavs .sidebar-btn {
+    display: flex;
+  }
+
+  .hamburger + .sidenavs:target {
+    width: 100%;
+    /* サイドメニューの幅 */
+  }
+
+  .sidebar-btn {
+    padding-right: 1.5rem;
+  }
+
+  /* 自己紹介 */
+  .inko {
+    width: 50%;
+  }
+
+  #about li {
+    font-size: 2rem;
+  }
+
+  #about figure {
+    display: block;
+  }
+
+  /* 制作物 */
+  .products {
+    display: flex;
+  }
+
+  #product-caption1 {
+    bottom: 1px;
+  }
+
+}
+
+
+
+/* pc版（大） */
+@media (min-width:1024px){
+    /* 自己紹介 */
+    #about aside {
+        display: flex;
+    }
+
+    .inko {
+        width: 100%;
+    }
+
+    #about li {
+        font-size: 1.6rem;
+    }
+
+    /* 制作物 */
+    .product-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .product-info {
+      font-size: 20px;
+    }
+}

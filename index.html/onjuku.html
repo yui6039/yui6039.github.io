@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="onjuku.css" >
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(function($){
+            $("#button1").on("click",function(){
+                const top=$("#abouth1").offset().top;
+                $("html").animate({scrollTop:top});
+            });
+
+            $("#button2").on("click",function(){
+                const top=$("#header-container").offset().top;
+                $("html").animate({scrollTop:top});
+            })
+
+        
+        })
+
+
+        // Resources
+    </script>
+    <title>御宿町</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header-container" id="header-container">
+
+        
+        <!-- ハンバーガーメニュー -->
+        <div id="hamburger">
+            <p class="btn-gNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+        </div>
+
+        <nav id="gNav" class="">
+            <ul class="gNav-menu">
+                <li><a id="button1" class="underline">御宿とは</a></li>
+                <li><a href="#"  class="underline">食べる</a></li>
+                <li><a href="#" class="underline">遊ぶ</a></li>
+            </ul>
+        </nav>
+        <!-- ハンバーガーメニュー終わり -->
+            
+            <img src="title.png" class="title">
+        </div>
+    </header>
+
+    <!-- 御宿とは -->
+    <div class="container">
+        <article class="about containers">
+            <h1 id="abouth1">御宿町とは</h1>
+            <div class="about-container">
+                <img src="about.png" id="about-img">
+                <p>御宿町は千葉県の南東、房総半島の東にいちする小さな町<br>です。海岸には真っ白な砂浜が広がる、房総を代表する海<br>岸があり、童謡「月の砂漠」の発祥の地として知られています。<br>新鮮な海の幸・山の幸も豊富です。<br>魅力あふれる御宿町を訪れてみませんか？</p>
+                <a href="#"><img src="more.png" class="more_btn"></a>
+            </div>
+        </article>
+    </div>
+
+    <!-- 見どころ -->
+    <div id="highlight-wrapper">
+    <div class="container">
+    <article class="highlight containers">
+        <h1>御宿町の見どころ</h1>
+        <div class="highlight-container">
+            
+                <div class="logo">
+                    <img src="onjuku-img/sea.png" class="highlight-img">
+                    <h2>海</h2>
+                    <p>海辺にはマイナスイオンの空気がいっぱい。海水にはヨード、カリウム等の微量元素が含まれているので新陳代謝を高め血行を良くする働きがあります。</p>
+                </div>
+          
+            
+                <div class="logo">
+                    <img src="food.png" class="highlight-img">
+                    <h2>グルメ</h2>
+                    <p>房総半島の豊かな漁場から水揚げされた新鮮な魚介類は絶品です。特に伊勢海老、あわび、金目鯛が有名です。</p>
+                </div>
+            
+            
+                <div class="logo last-logo">
+                    <img src="history.png" class="highlight-img">
+                    <h2>歴史</h2>
+                    <p>歴史民族資料館では御宿町上布施から出土した縄文土器を展示するとともに、御宿町ゆかりの文人・画家を紹介しています。</p>
+                </div>
+           
+        </div>
+    </article></div></div>
+    <!-- prとsns -->
+    <div class="container">
+    <aside class="sns containers">
+        <div class="pr-container">
+            <a href="#"><img src="shrimp.png"></a>
+            <a href="#"><img src="fire.png"></a>
+        </div>
+        <div class="sns-container">
+            <h2>最新情報日々更新中です</h2>
+            <ul>
+                <li><a href="#"><img src="twitter2.png"></a></li>
+                <li><a href="#"><img src="facebook2.png"></a></li>
+                <li><a href="#"><img src="youtube2.png"></a></li>
+            </ul>
+            <h3>Follow us!</h3>
+        </div>
+    </aside>
+    <figure class="point"><img src="point.png" id="button2"></figure>
+    </div>
+    <footer>
+        <p>&copy;2021onjuku.town</p>
+    </footer>
+    <!-- ハンバーガーメニュー -->
+<script>
+
+    $(function() {
+	$('.btn-gNav').on("click", function(){
+		$(this).toggleClass('open');
+		$('#gNav').toggleClass('open');
+	});
+});
+
+</script>
+    <!-- ハンバーガーメニュー -->
+    
+</body>
+</html>

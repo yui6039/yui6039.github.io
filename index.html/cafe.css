@@ -1,0 +1,333 @@
+/* 全体 */
+body {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.titles {
+    width: 5rem;
+}
+
+/* ヘッター */
+.header_container {
+    background-color: #ffffbb;
+    padding: 1rem;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header_imgs {
+    display: flex;
+}
+
+.torio {
+    position:relative;
+    bottom: 30px;
+    left:0;
+    object-fit: contain;
+    width: 30%;
+}
+
+.hima1 {
+    position:relative;
+    bottom: 30px;
+    left:0;
+    object-fit: contain;
+    width: 30%;
+    bottom: 0;
+}
+
+.figure {
+    margin: 0;
+}
+
+.header_imgs figure {
+    width: 30%;
+}
+
+header img {
+    width: 3rem;
+}
+
+header li:not(:last-child) {
+    padding-right :1rem;
+}
+
+.header_title {
+    width: 40%;
+    height:30%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.botton {
+    cursor: pointer;
+}
+.botton:hover {
+    box-shadow: 6px 6px 3px #666;
+}
+
+.button:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+/* コンセプト */
+.concept_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem ;
+}
+
+.concept_container h1 {
+    font-size: 18px;
+    color: #666;
+}
+
+.concept_container p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.house {
+    width: 40%;
+    padding-top: 1rem;
+}
+
+.sub-concept {
+    margin: 0;
+    padding:0;
+    text-align: center;
+}
+
+/* メニュー */
+.box a {
+    text-align: center;
+}
+.menu_container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #ffffbb;
+    padding: 1rem;
+}
+
+.menus {
+    list-style: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menus img {
+    width: 70%;
+}
+
+img.more_btn {
+    width: 10rem;
+}
+
+.more_btn:active{
+    position: relative;
+    top: 5px;
+}
+
+/* お知らせ */
+.news_containter {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 1rem;
+}
+
+.line {
+    margin-top: 0;
+    width: 90%;
+}
+
+.line:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.banner {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+/* フッター */
+.footer_container {
+    background-color: #ffffbb;
+    padding: 1rem;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer li:not(:last-child){
+    padding-right: 1rem;
+}
+
+footer img {
+    width: 3rem;
+}
+
+footer p {
+    font-size: 80%;
+    color: #666;
+    text-align: center;
+}
+
+/* pc版 */
+@media(min-width:600px){
+
+    .contents {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header img {
+        width: 6rem;
+    }
+
+    .titles {
+        width: 8rem;
+    }
+
+    .house {
+        width: 50%;
+    }
+
+    .concept_container h1 {
+        font-size: 26px;
+        color: #666;
+    }
+
+    .concept_container p {
+        font-size:20px;
+        color: #666;
+        margin: 0;
+    }
+
+    .box {
+        text-align: center;
+    }
+
+    .menus {
+        display: flex;
+    }
+
+    .prs {
+        width: 568px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .prs figure {
+        flex: none;
+        width: 280px;
+        margin: 0;
+    }
+
+    footer img {
+        width: 4rem;
+    }
+
+}
+
+/* pc版（大） */
+@media(min-width:1024px){
+    .contents {
+        max-width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header img {
+        width: 8rem;
+    }
+
+    .titles {
+        width: 15rem;
+    }
+
+    /* コンセプト */
+    .concept_container h1 {
+        font-size: 40px;
+    }
+
+    .concept_container p {
+        font-size: 32px;
+    }
+
+    .sub-concept {
+        display: flex;
+        text-align: left;
+        width: 100%;
+    }
+
+    .house {
+        width: 50%;
+    }
+
+    .sub-text {
+        width: 50%;
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
+
+    /* メニュー */
+    .menus {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    /* お知らせ */
+    .prs {
+        width: 1025px;
+        justify-content: space-evenly;
+    }
+
+    .banners {
+        display: flex;
+    }
+
+    .banner {
+        justify-content: space-evenly;
+    }
+
+    .banner1 {
+        padding-right: 1rem;
+    }
+
+    /* フッター */
+    footer ul {
+        padding-top: 1rem;
+    }
+
+    footer img {
+        width: 6rem;
+    }
+
+}

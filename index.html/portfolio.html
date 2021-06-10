@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="portfolio.css" >
+        <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"> -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                function toggleSidebar() {
+                $(".button").toggleClass("active");
+                $("main").toggleClass("move-to-left");
+                $(".sidebar-item").toggleClass("active");
+                }
+
+                $(".button").on("click tap", function() {
+                toggleSidebar();
+                });
+
+                $(document).keyup(function(e) {
+                if (e.keyCode === 27) {
+                    toggleSidebar();
+                }
+                });
+            });
+
+            $(function($){
+                $("#button1").on("click",function(){
+                    const top=$("h1").offset().top;
+                    $("html").animate({scrollTop:top});
+                });
+            })
+
+            $(function($){
+                $("#button2").on("click",function(){
+                    const about=$("#about").offset().top;
+                    $("html").animate({scrollTop:about});
+                })
+            })
+
+            $(function($){
+                $("#button3").on("click",function(){
+                    const product=$("#product").offset().top;
+                    $("html").animate({scrollTop:product});
+                });
+            })
+
+            Resources
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <h1>Portfolio</h1>
+                <aside>
+                <div class="hamburger">
+                    <div class="borders"> 
+                        <a href="#sidemenu" class="hamburger-menu">
+                            <div class="bar top"></div>
+                            <div class="bar middle"></div>
+                            <div class="bar bottom"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="sidenavs" id="sidemenu">
+                    <a href="#" class="close-btn">&times;</a>
+                    <div class="sidebar-btn">
+                        <p id="button1" class="button">TOP</p>
+                        <p id="button2" class="button">自己紹介</p>
+                        <p id="button3" class="button">制作物</p>
+                        <p id="button4" class="button">お問い合わせ</p>
+                    </div>
+                </div>
+                </aside>
+            </div>
+        </header>
+        <article id="about">
+            <div class="wrapper">
+                <h3>ABOUT</h3>
+                <h2>自己紹介</h2>
+                <aside>
+                    <figure><img src="portfolioImg/inko.png" class="inko"></figure>
+                    <ul>
+                        <li class="text">名前：Yui Masuo</li>
+                        <li class="text">出身：東京都（現在は埼玉県住み）</li>
+                        <li class="text">学歴：青山学院大学経営学部</li>
+                        <li class="text">職歴：銀行に就職し、２０２１年３月退職。</li>
+                        <li class="text">その他：無類の鳥好きです。オカメインコとセキセイインコ を飼っています。</li>
+                    </ul>
+                </aside>
+            </div>
+        </article>
+        <section id="product"> 
+            <div class="wrapper">
+                <h3>PRODUCT</h3>
+                <h2>制作物</h2>
+                <div class="products">
+                    <figure class="product-item">
+                        <a href="file:///Users/yui/%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA/cafe/cafe.html" target="_blank" rel="noopener noreferrer"><img src="portfolioImg/birdcafe-min.png" class="product" ></a>
+                        <figcaption class="product-caption" id="product-caption1">
+                            <p class="product-title">架空のことりカフェサイト</p>
+                            <p class="product-info">html/css/jquery</p>
+                            <p class="product-info">レスポンシブに対応</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="product-item">
+                        <a href="file:///Users/yui/%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA/onjuku/onjuku.html" target="_blank" rel="noopener noreferrer"><img src="portfolioImg/onjukucity-min.png" class="product"></a>
+                        <figcaption class="product-caption">
+                            <p class="product-title">架空の観光WEBサイト</p>
+                            <p class="product-info">html/css/jquery</p>
+                            <p class="product-info">レスポンシブに対応</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 id="contact">お問い合わせ</h2>
+        </section>
+        <footer>
+        </footer>
+    </body>
+</html>
