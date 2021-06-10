@@ -39,11 +39,9 @@ header ul {
 
 .hima1 {
     position:relative;
-    bottom: 30px;
     left:0;
     object-fit: contain;
     width: 30%;
-    bottom: 0;
 }
 
 .figure {
@@ -221,13 +219,10 @@ footer p {
 
     .concept_container h1 {
         font-size: 26px;
-        color: #666;
     }
 
     .concept_container p {
         font-size:20px;
-        color: #666;
-        margin: 0;
     }
 
     .box {
@@ -255,13 +250,12 @@ footer p {
     }
 
 }
+/* pc版ここまで */
 
 /* pc版（大） */
 @media(min-width:1024px){
     .contents {
         max-width: 1366px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     header img {
@@ -285,10 +279,6 @@ footer p {
         display: flex;
         text-align: left;
         width: 100%;
-    }
-
-    .house {
-        width: 50%;
     }
 
     .sub-text {
@@ -331,3 +321,4 @@ footer p {
     }
 
 }
+/* pc版（大）ここまで */

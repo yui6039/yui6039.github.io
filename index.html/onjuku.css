@@ -59,7 +59,7 @@ img {
 
 /* ヘッター */
 .header-container {
-    background-image: url(hero2.png);
+    background-image: url(onjuku-img/hero2.png);
     background-position:center top;
     background-repeat:no-repeat;
     -moz-background-size:cover;
@@ -249,6 +249,7 @@ span.text-small {
     text-decoration: none;
   }
   
+  
     
 /* pc版 */
 @media(min-width:600px) {
@@ -259,9 +260,7 @@ span.text-small {
     }
     /* ヘッター */
     .header-container {
-        background-image: url(hero.png);
-        display: flex;
-        flex-direction: column;
+        background-image: url(onjuku-img/hero.png);
         height: 80vh;
     }
 
@@ -275,7 +274,6 @@ span.text-small {
 		display: none;
 	}
 	#gNav{
-		position: fixed;
 		top: 0;
 		right: 0;
 		height: 50px;
@@ -284,10 +282,8 @@ span.text-small {
         padding-top: 0;
 	}
 	#gNav .gNav-menu{
-		display: flex;
 		flex-direction: row;
 		margin: 0;
-        padding: 0;
 	}
 
 	#gNav .gNav-menu li{
@@ -298,10 +294,6 @@ span.text-small {
         margin-right: 3rem;
         font-size: 15px;
     }
-
-    /* #gNav .gNav-menu li a:hover {
-        text-decoration: underline;
-    } */
 
     h1 {
         font-size: 36px;
@@ -340,10 +332,6 @@ span.text-small {
 
     .logo {
         width: 100%;
-        justify-content: center;
-        flex-direction: column;
-        margin-bottom: 40px;
-        padding-top: 60px;
         display: block;
     }
 
@@ -392,7 +380,6 @@ span.text-small {
 
     .container {
         max-width: 1080px;
-        margin: 0 auto;
     }
 
     h1 {
@@ -400,10 +387,6 @@ span.text-small {
     }
 
     /* ヘッター */
-    .header-container {
-        background-image: url(hero.png);
-    }
-
     .title {
         width: 35%;
     }
@@ -418,7 +401,6 @@ span.text-small {
 
     #gNav .gNav-menu li a {
         font-size: 15px;
-        padding-right: 5rem;
     }
 
     #gNav .gNav-menu li a:not(:last-child){
@@ -459,8 +441,6 @@ span.text-small {
     .point {
         margin: 0 0 150px 0;
     }
-
-    
-
 }
+/* pc版（大）ここまで */
 
