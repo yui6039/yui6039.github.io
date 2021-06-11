@@ -212,10 +212,69 @@ h3 {
 
 
 /*お問い合わせ*/
-#contact {
+.contact {
     background-color: #f4e9e2;
     margin: 0;
+    text-align: center;
+    padding-bottom: 40px;
 }
+
+#contact-title {
+  margin: 0;
+  padding-top: 80px;
+}
+
+input{
+  margin:10px 0;
+  height:40px;
+  width:160px;
+}
+.form{
+  padding:30px;
+}
+
+.form input, textarea {
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 20px;
+}
+
+.form input, button {
+  display: block;
+  margin: 20px auto;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.btn-info {
+  color: #666;
+  background-color: #fff;
+  border-color: #17a2b8;
+  border:solid .5px #666;
+  border-radius:10px;
+  width: 100px;
+  float:right;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  height: 80px;
+}
+
+footer p {
+  padding-top: 30px;
+  font-size: 10px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
 
 /* pc版 */
 @media(min-width:600px) {
@@ -293,6 +352,12 @@ h3 {
 
   #product-caption1 {
     bottom: 1px;
+  }
+
+  /* お問い合わせ */
+  .form input, textarea {
+    width: 350px;
+    padding: 0 20px;
   }
 
 }
