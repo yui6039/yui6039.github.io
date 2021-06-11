@@ -254,11 +254,9 @@ button, input, optgroup, select, textarea {
 .btn-info {
   color: #666;
   background-color: #fff;
-  border-color: #17a2b8;
-  border:solid .5px #666;
+  border:solid .1px #666;
   border-radius:10px;
   width: 100px;
-  float:right;
 }
 
 /* フッター */
