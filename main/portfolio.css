@@ -9,7 +9,7 @@ body {
 }
 
 .wrapper {
-  padding: 0 1.5rem;
+  padding: 1rem 1.5rem;
   margin:0 auto;
 }
 
@@ -78,7 +78,7 @@ h1 {
     /* ボックスからはみ出る箇所を隠す */
     width: 0;
     transition-duration:1.2s;
-    /* アニメーションの時間を0.5秒に指定 */
+    /* アニメーションの時間を指定 */
   }
   /* ハンバーガーメニュー表示時 */
   .sidenavs {
@@ -95,7 +95,7 @@ h1 {
     /* 横スクロールを無効にする */
     padding-top: 60px;
     transition: .8s;
-    /* アニメーションの時間を0.5秒に指定 */
+    /* アニメーションの時間を指定 */
     transform:translate(0px);
     /* X軸(横)の移動距離を指定 */
     border-right: 1px solid rgba(255, 255, 255, 1);
@@ -144,6 +144,7 @@ h1 {
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
+    align-items: flex-start;
 }
 
 #about ul {
@@ -175,7 +176,8 @@ h3 {
 }
 
 .inko {
-    width: 80%;
+  max-width: 100%;
+  height: auto;
 }
 
 /*制作物*/
