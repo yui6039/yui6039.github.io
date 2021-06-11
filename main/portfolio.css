@@ -357,7 +357,6 @@ footer p {
   /* お問い合わせ */
   .form input, textarea {
     width: 350px;
-    padding: 0 20px;
   }
 
 }
