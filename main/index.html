@@ -49,6 +49,14 @@
                 });
             })
 
+            $(function($){
+                $("#button4").on("click",function(){
+                    const contact=$(".contact").offset().top;
+                    $("html").animate({scrollTop:contact});
+                });
+            })
+            
+
             Resources
         </script>
     </head>
